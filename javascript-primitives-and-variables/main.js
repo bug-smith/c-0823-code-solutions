@@ -27,3 +27,5 @@ console.log('typeof unknown:', typeof unknown);
 console.log('value of never:', never);
 
 console.log('typeof never:', typeof never);
+
+console.log('I messed up pt. 2', fullName);
