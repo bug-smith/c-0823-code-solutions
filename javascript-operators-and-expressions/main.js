@@ -24,7 +24,8 @@ const isAcidic = pH <= 6.99;
 const headCount = 300;
 const isSparta = headCount === 300;
 
-const motto = fullName + ' ' + 'is the GOAT';
+let motto = firstName;
+motto += ' is the GOAT';
 
 console.log(valueOf, 'area:', area);
 console.log(typeOf, 'area:', typeof area);
