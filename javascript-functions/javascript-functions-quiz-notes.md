@@ -15,13 +15,13 @@ After completing this exercise, you should be able to discuss or answer the foll
   The end of the function's code block, as indicated by a } closing curly brace.
 
 - Describe the parts of a function **call**.
-
+  the functions name with arguments inputted in the parenthese
 - When comparing them side-by-side, what are the differences between a function **call** and a function **definition**?
   the differences is one is defining what the function will do, action, with call defining how that action will react
 - What is the difference between a **parameter** and an **argument**?
   parameter is what is fed into the definition of the function to allow for manipulation of said argument, with the argument being what is called into the function.
 - Why are function **parameters** useful?
-
+  due to the fact that they are a versatile variable that is unknown and can be manipulated before the function call without messing up the code base.
 - What two effects does a `return` statement have on the behavior of a function?
   Causes the function to produce a value we can use in our program.
   Prevents any more code in the function's code block from being run.
