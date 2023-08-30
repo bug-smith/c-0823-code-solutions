@@ -26,7 +26,7 @@ function isEven(number) {
 }
 
 function startsWithJ(string) {
-  const firstLetter = string.slice(0, 1);
+  const firstLetter = string[0];
   if (firstLetter === 'J') {
     return true;
   } else {
@@ -36,7 +36,7 @@ function startsWithJ(string) {
 
 function isOldEnoughToDrink(person) {
   const ageProperty = person.age;
-  if (ageProperty >= 16) {
+  if (ageProperty >= 21) {
     return true;
   } else {
     return false;
@@ -57,15 +57,14 @@ function isOldEnoughToDrinkAndDrive(person) {
 }
 
 function categorizeAcidity(pH) {
-  const notValid = 'invalid pH level';
   if (pH === 7) {
-    console.log('neutral');
-  } else if (pH <= 7 && pH >= 0) {
-    console.log('acid');
-  } else if (pH <= 14 && pH >= 7) {
-    console.log('base');
+    return 'neutral';
+  } else if (pH < 7 && pH >= 0) {
+    return 'acid';
+  } else if (pH <= 14 && pH > 7) {
+    return 'base';
   } else {
-    return notValid;
+    return 'invalid pH level';
   }
 }
 
@@ -73,38 +72,29 @@ function introduceWarnerBro(name) {
   switch (name) {
     case 'yakko':
     case 'wakko':
-      console.log("We're the warner brothers!");
-      break;
+      return "We're the warner brothers!";
     case 'dot':
-      console.log("I'm cute~");
-      break;
+      return "I'm cute~";
     default:
-      console.log('Goodnight everybody!');
+      return 'Goodnight everybody!';
   }
 }
 
 function recommendMovie(genre) {
-  const blankChar = '';
   switch (genre) {
     case 'action':
-      console.log('John Wick');
-      break;
+      return 'John Wick';
     case 'comedy':
-      console.log('Super Bad');
-      break;
+      return 'Super Bad';
     case 'horror':
-      console.log('Insidious');
-      break;
+      return 'Insidious';
     case 'drama':
-      console.log('Notebook');
-      break;
+      return 'Notebook';
     case 'musical':
-      console.log('Sounds of Music');
-      break;
+      return 'Sounds of Music';
     case 'sci-fi':
-      console.log('Star Trek');
-      break;
+      return 'Star Trek';
     default:
-      return blankChar;
+      return "Genre not recognized. Choose between action, comedy, horror, drama, musical, or sci-fi.' ";
   }
 }
