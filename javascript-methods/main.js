@@ -7,7 +7,7 @@ console.log('maximumValue:', maximumValue);
 
 const heroes = ['Superman', 'Batman', 'Robin', 'Green Arrow'];
 
-let randomNumber = Math.random(heroes);
+let randomNumber = Math.random();
 randomNumber = randomNumber * heroes.length - 1;
 
 const randomIndex = Math.floor(randomNumber);
@@ -18,7 +18,7 @@ const randomHero = heroes[randomIndex];
 
 console.log('randomHero:', randomHero);
 
-const arr = [
+const library = [
   {
     title: 'Holes',
     author: 'Louis Sachar',
@@ -32,8 +32,6 @@ const arr = [
     author: 'Bug',
   },
 ];
-
-const library = arr;
 
 const lastBook = library.pop();
 
@@ -56,7 +54,7 @@ library.push(js);
 
 library.unshift(css);
 
-library.splice(2);
+library.splice(1, 1);
 
 console.log('library:', library);
 
