@@ -1,4 +1,5 @@
 /* exported setValue */
 function setValue(object, key, value) {
-  return object[key];
+  const obj = (object[key] = value);
+  return obj;
 }

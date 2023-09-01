@@ -1,4 +1,4 @@
 /* exported getValue */
-function getValue(object) {
-  return object[object];
+function getValue(object, key) {
+  return object[key];
 }
