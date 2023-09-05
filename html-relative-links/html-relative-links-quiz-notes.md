@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - How do you indicate the relative link to a parent directory?
-
+  ../
 - How do you indicate the relative link to a child directory?
-
+  ./ - folder/file
 - How do you indicate the relative link to a grand parent directory?
-
+  ../../
 - How do you indicate the relative link to the same directory?
+  /.
 
 ## Notes
 
