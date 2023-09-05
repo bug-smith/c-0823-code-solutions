@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the names of the individual pieces of a CSS rule?
-
+  selector, curly braces, declaration,
 - In CSS, how do you select elements by their `class` attribute?
-
+  .+"class" infront of the class
 - In CSS, how do you select elements by their tag name?
-
+  element then the tag name
 - In CSS, how do you select an element by its `id` attribute?
+  #+"id"
 
 ## Notes
 
