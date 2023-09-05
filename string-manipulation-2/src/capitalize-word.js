@@ -2,9 +2,13 @@
 function capitalizeWord(word) {
   let firstLetter = '';
   let remainingLetter = '';
-  firstLetter = word.charAt([0]).toUpperCase([0]);
-  remainingLetter = word.slice(1, word.length).toLowerCase();
-  const finalWord = firstLetter + remainingLetter;
-
+  let finalWord = '';
+  if (word.toLowerCase() === 'javascript') {
+    finalWord = 'JavaScript';
+  } else {
+    firstLetter = word.charAt([0]).toUpperCase([0]);
+    remainingLetter = word.slice(1, word.length).toLowerCase();
+    finalWord = firstLetter + remainingLetter;
+  }
   return finalWord;
 }
