@@ -1,6 +1,6 @@
 /* exported capitalizeWords */
 function capitalizeWords(string) {
-  const splitWord = string.split(' ');
-
-  return splitWord;
+  let cappedLetter = string.toUpperCase([0]).slice(1);
+  cappedLetter = cappedLetter.slice();
+  return cappedLetter;
 }
