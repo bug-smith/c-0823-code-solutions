@@ -14,8 +14,6 @@
   color: white;
 }
 
-.row1,
-.row2,
-.row3 {
+tr:nth-child(even) {
   background-color: lightgray;
 }
