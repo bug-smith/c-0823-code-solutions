@@ -1,11 +1,56 @@
+body {
+  margin: 0 auto;
+}
+
 h1.header {
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
-  width: auto;
-  margin: auto 0;
+  width: 400px;
+  margin: center;
   text-transform: uppercase;
   color: #ec5c57;
   font-family: 'Brandon Grotesque', sans-serif;
+}
+
+p.email {
+  height: 0.7rem;
+  margin: 0.5rem;
+  text-align: justify;
+  font-size: small;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+}
+
+p.name {
+  height: 0.7rem;
+  margin: 0.5rem;
+  text-align: justify;
+  font-size: small;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+}
+
+p.hiring-location {
+  height: 0.7rem;
+  margin: 0.5rem;
+  text-align: justify;
+  font-size: small;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+}
+
+p.how-many {
+  height: 0.7rem;
+  margin: 0.5rem;
+  text-align: justify;
+  font-size: small;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+}
+
+#your-email {
+  width: 300px;
+  height: 30px;
 }
