@@ -11,11 +11,8 @@ h1.header {
   font-family: 'Brandon Grotesque', sans-serif;
 }
 
-p.hiring-location,
-p.name,
-p.email,
-p.header,
-p.how-many {
+label {
+  display: block;
   height: 0.7rem;
   margin: 0.5rem;
   text-align: justify;
