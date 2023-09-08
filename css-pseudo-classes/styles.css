@@ -1,0 +1,19 @@
+.button {
+  box-sizing: border-box;
+  padding: 6px 10px;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.table-head {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
