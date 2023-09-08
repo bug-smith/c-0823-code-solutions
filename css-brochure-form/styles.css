@@ -11,54 +11,31 @@ h1.header {
   font-family: 'Brandon Grotesque', sans-serif;
 }
 
-p.email {
-  height: 0.7rem;
-  margin: 0.5rem;
-  text-align: justify;
-  font-size: 12px;
-  font-family: 'Brandon Grotesque', sans-serif;
-  text-transform: uppercase;
-}
-
-p.name {
-  height: 0.7rem;
-  margin: 0.5rem;
-  text-align: justify;
-  font-size: 12px;
-  font-family: 'Brandon Grotesque', sans-serif;
-  text-transform: uppercase;
-}
-
-p.hiring-location {
-  height: 0.7rem;
-  margin: 0.5rem;
-  text-align: justify;
-  font-size: 12px;
-  font-family: 'Brandon Grotesque', sans-serif;
-  text-transform: uppercase;
-}
-
+p.hiring-location,
+p.name,
+p.email,
+p.header,
 p.how-many {
   height: 0.7rem;
   margin: 0.5rem;
   text-align: justify;
-  font-size: 12px;
-  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 11px !important;
+  font-family: 'Brandon Grotesque', sans-serif !important;
   text-transform: uppercase;
-  width: 100%;
+  font-weight: bold;
 }
 
 #your-email,
 #name,
 #hiring-location {
-  width: 300px;
+  width: 400px;
   height: 30px;
   border-radius: 5px;
   border-width: 0.1px;
 }
 
 #how-many {
-  width: 300px;
+  width: 400px;
   height: 30px;
   background-color: #f3f3f3;
   border-radius: 5px;
@@ -70,5 +47,6 @@ p.how-many {
   height: 30px;
   background-color: #ec5d58;
   border-radius: 20px;
-  position: ;
+  margin-left: 300px;
+  margin-top: 10px;
 }
