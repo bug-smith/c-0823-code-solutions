@@ -5,8 +5,10 @@ button.language {
   /* your code here 👇 */
   box-sizing: border-box;
   margin-left: 12px;
-  margin-right: 16px;
+  margin-right: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
   border-radius: 6px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
