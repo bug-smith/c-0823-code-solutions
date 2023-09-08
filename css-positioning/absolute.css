@@ -5,6 +5,7 @@
   background-size: cover;
 
   /* your code here */
+  position: relative;
 }
 
 .meme > img {
@@ -16,8 +17,8 @@
 
   /* your code here */
   position: absolute;
-  left: 245px;
-  bottom: 825px;
+  right: 20px;
+  top: 30px;
 }
 
 .joke {
@@ -30,8 +31,8 @@
   text-transform: uppercase;
 
   /* your code here */
-  position: relative;
-  top: 200px;
+  position: absolute;
+  bottom: 5px;
 }
 
 .overlay {
