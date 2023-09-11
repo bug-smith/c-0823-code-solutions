@@ -1,15 +1,44 @@
-.container {
+#container {
   display: flex;
   font-family: Karla, sans-serif;
-  justify-content: center;
-}
-
-.content {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.headline {
-  text-transform: uppercase;
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.subtent {
+  display: flex;
+  width: 50%;
+}
+
+.info,
+p {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-family: Karla, sans-serif;
+  color: #8c8c8c;
+}
+
+h3.h3 {
+  color: #0e0e0e;
+  width: 40%;
+}
+
+h1 {
+  color: #0e0e0e;
+  font-size: 3rem;
 }
