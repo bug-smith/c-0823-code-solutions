@@ -6,7 +6,7 @@ const $click = document.querySelector('.click-count');
 
 $button.addEventListener('click', function (event) {
   clickNumber++;
-  $click.innerHTML = 'Clicks:' + clickNumber;
+  $click.textContent = 'Clicks:' + clickNumber;
   if (clickNumber < 4) {
     $button.setAttribute('class', 'hot-button cold');
   } else if (clickNumber < 7) {
