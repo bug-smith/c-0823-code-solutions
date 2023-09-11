@@ -42,3 +42,17 @@ h1 {
   color: #0e0e0e;
   font-size: 3rem;
 }
+
+button {
+  display: flex;
+  height: 30px;
+  padding: 7px;
+  background-color: transparent;
+  color: #d3514a;
+  border-color: #d3514a;
+  border-width: 0.001cm;
+  font-size: 12px;
+  width: 120px;
+  justify-content: center;
+  font-family: Karla, sans-serif;
+}
