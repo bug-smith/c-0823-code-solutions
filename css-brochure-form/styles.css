@@ -1,0 +1,49 @@
+h1.header {
+  align-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  width: 350px;
+  margin: center;
+  text-transform: uppercase;
+  color: #ec5c57;
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
+label {
+  display: block;
+  height: 0.7rem;
+  margin: 0.5rem;
+  text-align: justify;
+  font-size: 11px !important;
+  font-family: 'Brandon Grotesque', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#your-email,
+#name,
+#hiring-location {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 0.1px;
+}
+
+#how-many {
+  width: 400px;
+  height: 30px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.submit-button {
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: #ec5d58;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-top: 10px;
+}
