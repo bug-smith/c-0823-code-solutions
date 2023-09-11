@@ -1,0 +1,37 @@
+.container {
+  color: white;
+  background-color: #1a96d9;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.nestedcontent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: calc(100% / 3);
+}
+
+p {
+  text-align: center;
+  width: 300px;
+}
+
+.image {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+img {
+  max-width: 100px;
+}
