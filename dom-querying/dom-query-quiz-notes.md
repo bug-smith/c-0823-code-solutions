@@ -39,11 +39,19 @@ to allow javascript to take precedence on the management of data
 
 - What `console` method allows you to inspect the properties of a DOM element object?
 
+console.dir()
+
 - Why would a `<script>` tag need to be placed at the bottom of the HTML content instead of at the top?
+
+to allow for all of the HTML Document to load.
 
 - What does `document.querySelector()` take as its argument and what does it return?
 
+it takes a CSS selector as an arguement, and returns the html tag/element details, within that selector.
+
 - What does `document.querySelectorAll()` take as its argument and what does it return?
+
+it returns all elements inside the matching css selector
 
 ## Notes
 
