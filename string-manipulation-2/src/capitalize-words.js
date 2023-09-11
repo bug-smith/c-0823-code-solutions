@@ -1,7 +1,11 @@
 /* exported capitalizeWords */
 function capitalizeWords(string) {
-  let emptyString = '';
-  const cappedLetter = string.toLowerCase().slice(1);
-  emptyString = string.charAt(0).toUpperCase() + cappedLetter;
-  return emptyString;
+  const emptyString = string.split(' ');
+
+  for (let i = 0; i < emptyString.length; i++) {
+    emptyString[i] =
+      emptyString[i][0].toUpperCase() + emptyString[i].substr(1).toLowerCase();
+  }
+
+  return emptyString.join(' ');
 }
