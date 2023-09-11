@@ -11,6 +11,7 @@ console.log()
 - What is a "model"?
 
 a model is a modifiable data set
+representation of a data structure
 
 - Which "document" is being referred to in the phrase Document Object Model?
 
@@ -35,7 +36,7 @@ querySelectorAll()
 
 - Why might you want to assign the return value of a DOM query to a variable?
 
-to allow javascript to take precedence on the management of data
+to reaccess the DOM data
 
 - What `console` method allows you to inspect the properties of a DOM element object?
 
