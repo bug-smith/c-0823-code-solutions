@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.two-column {
+  display: flex;
+  flex-basis: calc(100% / 2);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-between;
+}
