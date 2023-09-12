@@ -1,0 +1,76 @@
+* {
+  font-family: Arial, sans-serif !important;
+}
+
+.main {
+  display: flex;
+  flex-direction: column; /* changed this to stack the containers vertically */
+}
+
+#b1 {
+  background-color: rgb(74, 74, 232);
+  color: white;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 18px !important;
+}
+
+#b2 {
+  color: white;
+  background-color: #eb5d5d;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 20px; /* added margin for better spacing */
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px !important;
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* center the button vertically */
+  height: 100vh; /* take full height of the viewport */
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* fix the position */
+  top: 0;
+  left: 0;
+  width: 100vw; /* full viewport width */
+  height: 100vh; /* full viewport height */
+  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black for overlay */
+  z-index: 1; /* place it on top of other content */
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box {
+  display: flex;
+  flex-direction: column; /* changed this to stack content vertically */
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
