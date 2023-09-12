@@ -4,7 +4,7 @@
 
 .main {
   display: flex;
-  flex-direction: column; /* changed this to stack the containers vertically */
+  flex-direction: column;
 }
 
 #b1 {
@@ -22,7 +22,7 @@
   width: 80px;
   height: 40px;
   border-radius: 5px;
-  margin-top: 20px; /* added margin for better spacing */
+  margin-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
   font-size: 20px !important;
@@ -32,21 +32,21 @@
 .container {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start; /* center the button vertically */
-  height: 100vh; /* take full height of the viewport */
+  align-items: flex-start;
+  height: 100vh;
 }
 
 .container2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed; /* fix the position */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* full viewport width */
-  height: 100vh; /* full viewport height */
-  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black for overlay */
-  z-index: 1; /* place it on top of other content */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 .button {
@@ -56,7 +56,7 @@
 
 .box {
   display: flex;
-  flex-direction: column; /* changed this to stack content vertically */
+  flex-direction: column;
   align-items: center;
   background-color: white;
   border-radius: 5px;
