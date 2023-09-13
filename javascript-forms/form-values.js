@@ -8,4 +8,5 @@ $form.addEventListener('submit', function (event) {
     message: $form.message.value,
   };
   console.log(obj);
+  $form.reset();
 });
