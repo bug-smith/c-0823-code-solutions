@@ -1,4 +1,6 @@
-document.addEventListener('click', function (event) {
+const $ul = document.querySelector('.task-list');
+
+$ul.addEventListener('click', function (event) {
   console.log('event.target', event.target);
   console.log('event.target.tagName', event.target.tagName);
   if (event.target && event.target.nodeName === 'BUTTON') {
