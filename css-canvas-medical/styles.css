@@ -1,29 +1,44 @@
 .container {
   display: flex;
   flex-direction: column;
+  min-width: 80%;
+  min-height: 100vh;
 }
 
-.tags {
+.flex {
   display: flex;
-  flex-direction: row;
 }
 
-.two-column {
-  display: flex;
-  flex-basis: calc(100% / 2);
-  width: 100%;
-}
-
-.column {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.relative {
-  position: relative;
+.two-column {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.p50 {
+  width: 50%;
 }
 
 .space-evenly {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.start {
+  display: flex;
+  align-items: start;
+}
+
+.end {
+  display: flex;
+  align-items: end;
+}
+
+.m50 {
+  display: flex;
+  margin: 50%;
 }
