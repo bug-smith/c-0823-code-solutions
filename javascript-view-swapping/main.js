@@ -16,9 +16,7 @@ $tabContainer.addEventListener('click', function (event) {
   for (let i = 0; i < $view.length; i++) {
     if ($view[i].getAttribute('data-view') === $dataView) {
       $view[i].classList.remove('hidden');
-      $view[i].classList.add('active');
     } else {
-      $view[i].classList.remove('active');
       $view[i].classList.add('hidden');
     }
   }
