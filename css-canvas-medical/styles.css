@@ -5,11 +5,11 @@
 }
 
 header {
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: solid 1px #f5f7f8;
+  border-bottom: solid 2px #f5f7f8;
 }
 
 ul {
@@ -36,7 +36,8 @@ main {
   display: flex;
   max-height: calc(100vh - 70px);
   justify-content: center;
-  padding-top: 50px;
+  flex-direction: column;
+  padding-top: 68px;
 }
 
 .image {
@@ -59,7 +60,7 @@ main {
 
 .body-content {
   position: absolute;
-  max-width: 30%;
+  max-width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +70,8 @@ main {
 #p1 {
   color: white;
   padding-bottom: 20px;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 .logo {
@@ -82,8 +85,14 @@ main {
   min-height: 100vh;
 }
 
-.flex {
+.align {
   display: flex;
+  align-items: center;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
 }
 
 .flex-column {
@@ -129,14 +138,28 @@ h1 {
   padding-right: 10px;
   padding-bottom: 15px;
   color: white;
+  font-size: 50px;
 }
 
 button {
   padding: 15px 40px;
   position: relative;
-  right: 35%;
+  right: 36%;
   background-color: #294464;
   color: white;
   border: none;
   border-radius: 5%;
+  font-size: 20px;
+}
+
+.mainh2 {
+  font-size: 40px;
+}
+
+.padding-top {
+  padding-top: 60px;
+}
+
+main:last-child > div {
+  background-color: #fafafa;
 }
