@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you retrieve data from `localStorage`?
   localStorage object getItem()
 - What data type can `localStorage` save in the browser?
-  objects
+  JSON strings
 - When does the `'beforeunload'` event fire on the `window` object?
   it fires when the window and doc are about to be unloaded. IE refreshed, back button, new screen.
 
