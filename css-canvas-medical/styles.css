@@ -34,7 +34,6 @@ ul li a {
 
 main {
   display: flex;
-  max-height: calc(100vh - 70px);
   justify-content: center;
   flex-direction: column;
   padding-top: 68px;
@@ -154,12 +153,95 @@ button {
 
 .mainh2 {
   font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .padding-top {
   padding-top: 60px;
 }
 
-main:last-child > div {
+.backgroundbox {
   background-color: #fafafa;
+  background-color: #294464;
+}
+
+.flex {
+  display: flex;
+}
+
+#divmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7%;
+}
+
+#divlocation {
+  padding: 3%;
+  display: flex;
+  flex-basis: calc(100% / 2);
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(110, 110, 110);
+}
+
+#leftcolumn {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 24px;
+  justify-content: center;
+  line-height: 200%;
+}
+
+#rightcolumn {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 24px;
+  justify-content: center;
+  line-height: 200%;
+}
+
+#mainheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(110, 110, 110);
+  width: 30%;
+}
+
+#p2 {
+  font-size: 1.3rem;
+  width: %;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bottom-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#ready-to-learn {
+  line-height: 220%;
+  padding-right: 30%;
+}
+
+#h2-bottom {
+  font-size: 2rem;
+  color: rgb(110, 110, 110);
+}
+
+#p3 {
+  font-size: 1.15rem;
+  color: rgb(110, 110, 110);
 }
