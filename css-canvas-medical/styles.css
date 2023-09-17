@@ -155,7 +155,7 @@ button {
   font-size: 40px;
   display: flex;
   justify-content: center;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 
 .padding-top {
@@ -169,40 +169,43 @@ button {
 
 .flex {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5%;
+  background-color: rgb(250, 250, 250);
+  border-bottom: solid 2px #f5f7f8;
 }
 
 #divmain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7%;
+  padding: 3%;
 }
 
 #divlocation {
-  padding: 3%;
+  padding: 5%;
   display: flex;
   flex-basis: calc(100% / 2);
-  width: 60%;
-  justify-content: center;
+  width: 150%;
+  justify-content: space-evenly;
   align-items: center;
   color: rgb(110, 110, 110);
 }
 
 #leftcolumn {
-  padding-right: 5%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   font-size: 24px;
   justify-content: center;
   line-height: 250%;
 }
 
 #rightcolumn {
-  padding-left: 5%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   font-size: 24px;
   justify-content: center;
   line-height: 250%;
@@ -214,12 +217,13 @@ button {
   justify-content: center;
   align-items: center;
   color: rgb(110, 110, 110);
-  width: 30%;
+  width: 100%;
 }
 
 #p2 {
   font-size: 1.3rem;
-  width: %;
+  width: 70%;
+  height: 130%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -245,4 +249,51 @@ button {
 #p3 {
   font-size: 1.15rem;
   color: rgb(110, 110, 110);
+}
+
+footer {
+  background-color: #515350;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  font-family: sans-serif;
+  color: white;
+}
+
+#footerimg {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+#footeraddy {
+  padding-top: 50px;
+  line-height: 150%;
+  font-size: 1.1rem;
+}
+
+#img2 {
+  width: 60%;
+}
+
+#footertags {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  line-height: 250%;
+  font-size: 1.1rem;
+}
+
+#ending {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+  height: 100px;
+  align-items: center;
+  font-size: 1.2rem;
+  color: rgb(110, 110, 110);
+  font-family: sans-serif;
+  padding-left: 15%;
 }
