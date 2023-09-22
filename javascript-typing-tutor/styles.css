@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.letter {
+  font-size: 2rem;
+  color: #333;
+  display: inline-block;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.letter.correct {
+  border-color: #2ecc71;
+}
+
+.letter.incorrect {
+  border-color: #e74c3c;
+}
