@@ -1,16 +1,23 @@
-const $letter = document.querySelectorAll('letter');
-let currentLetterStart = 0;
+const letters = document.querySelectorAll('.letter');
+let currentLetterIndex = 0;
 
 document.addEventListener('keydown', function (event) {
-  if (currentLetterStart < $letter.length) {
-    const currentLetter = $letter[currentLetterStart];
-    const keyPress = event.key.toLocaleLowerCase();
+  if (currentLetterIndex < letters.length) {
+    const currentLetter = letters[currentLetterIndex];
+    const pressedKey = event.key.toLowerCase();
 
-    if (currentLetter.textContent.toLocaleLowerCase() === keyPress) {
+    if (pressedKey === 'backspace') {
+      if (currentLetterIndex > 0) {
+        currentLetterIndex--; // Move back one step
+        const prevLetter = letters[currentLetterIndex];
+        prevLetter.classList.remove('correct', 'incorrect');
+      }
+    } else if (currentLetter.textContent.toLowerCase() === pressedKey) {
+      currentLetter.classList.remove('incorrect');
       currentLetter.classList.add('correct');
+      currentLetterIndex++;
     } else {
       currentLetter.classList.add('incorrect');
     }
-    currentLetterStart++;
   }
 });
