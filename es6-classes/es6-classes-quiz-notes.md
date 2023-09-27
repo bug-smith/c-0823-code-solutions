@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are JavaScript classes?
   they are a template for creating objects
 - When would you want to use a class?
-  when you need to build off an original format
+  when you need to delcare methods to objects/when you want to have seperate objects
 - How do you declare a class?
   class Name {}
 - How do you inherit from another class?
@@ -16,7 +16,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   so you dont have to double the work
 - How do you add methods and properties to a class?
   methodname () {}
-  dot notation
+  this.name = parameter
 
 ## Notes
 

@@ -1,14 +1,13 @@
 /* eslint-disable no-undef -- Shape is imported by .html */
 /* exported Square */
 class Square extends Shape {
-  constructor(area, perimeter, width) {
-    super(area, perimeter);
+  constructor(width) {
+    super(width * width, 4 * width);
     this.width = width;
   }
 
   describe() {
-    const string = `The area of the square is ${this.area}, the perimeter is ${this.perimeter}, and the width is ${this.width}`;
-    return string;
+    return super.describe() + `, and the width of the square is ${this.width}`;
   }
 }
 

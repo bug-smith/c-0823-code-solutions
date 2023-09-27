@@ -1,16 +1,17 @@
 /* eslint-disable no-undef -- Shape is imported by .html */
 /* exported Circle */
 class Circle extends Shape {
-  constructor(area, perimeter, radius) {
-    super(area, perimeter);
+  constructor(radius) {
+    super(Math.PI * radius * radius, 2 * Math.PI * radius);
     this.radius = radius;
   }
 
   describe() {
-    const string = `The area of the circle is ${this.area}, the perimeter is ${this.perimeter}, and the radius is ${this.radius}`;
-    return string;
+    return (
+      super.describe() + `, and the radius of the circle is ${this.radius}`
+    );
   }
 }
 
-const newCircle = new Circle(10, 8, 9);
+const newCircle = new Circle(10);
 console.log(newCircle.describe());
