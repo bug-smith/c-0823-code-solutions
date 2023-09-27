@@ -2,6 +2,7 @@ const letters = document.querySelectorAll('.letter');
 let currentLetterIndex = 0;
 
 document.addEventListener('keydown', function (event) {
+  console.log(event.key);
   if (currentLetterIndex < letters.length) {
     const currentLetter = letters[currentLetterIndex];
     const pressedKey = event.key.toLowerCase();
