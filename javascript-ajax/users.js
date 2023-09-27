@@ -8,10 +8,10 @@ function getUserData(user) {
   request.addEventListener('load', function () {
     console.log(request.status);
     console.log(request.response);
-    for (let i = 0; i < request.response; i++) {
+    for (let i = 0; i < request.response.length; i++) {
       const $li = document.createElement('li');
-      $li.textContent = request.response.name[i];
-      $userList.appendChild('$li');
+      $li.textContent = request.response[i].name;
+      $userList.appendChild($li);
     }
   });
   request.send();
