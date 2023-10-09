@@ -15,7 +15,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   foo(() => 42);
   ```
   - Identify the arrow function
-    foo(() => 42);
+    () => 42;
   - How many arguments does the arrow function take?
     0
   - What value does it return?
@@ -31,7 +31,8 @@ After completing this exercise, you should be able to discuss or answer the foll
   });
   ```
   - Identify the arrow function
-    bar((y) => {
+    (y) => {
+    console.log(`4y = ${4 * y}`);
   - How many arguments does the arrow function take?
     1
   - What value does it return?
@@ -39,7 +40,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   - How many arguments are passed to the function `bar`?
     1
   - What type of argument is passed to the function `bar`?
-    number
+    callback function
   - When does the arrow function's code get executed?
     immediately
 - How does the value of `this` differ between standard functions and arrow functions?
