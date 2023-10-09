@@ -11,6 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the syntax for `Array` destructuring?
   const/let [variable name1, variable name 2] = array/function
 - How can you tell the difference between destructuring and creating `Object`/`Array` literals?
+  the destructing will be taking in a variable or array that is already created.
 
 ## Notes
 
