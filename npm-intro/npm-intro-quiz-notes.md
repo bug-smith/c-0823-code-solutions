@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is NPM?
-
+  Node Package Manager
 - What is a package?
   it is a directory with one or more files in it with a package.json. usually has code in it that can be imported
 - What are some other popular package managers?
