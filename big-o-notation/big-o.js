@@ -12,11 +12,11 @@ function uniqueLinear(words) {
     if (!seen[word]) {
       // 2 * n = O(n)
       seen[word] = true; // 2 * n = O(n)
-      unique[unique.length] = word; // 3 * n = O(n)
+      unique[unique.length] = word; // 2 * n = O(n)
     }
   }
   return unique; // 1 * 1 = O(n)
-} // Big O Notation for uniqueLinear: O(3n)
+} // Big O Notation for uniqueLinear: O(2n)
 
 function uniqueQuadratic(words) {
   const unique = []; // 1 * 1 = O(?)
