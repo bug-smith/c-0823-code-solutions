@@ -24,8 +24,7 @@ v2 && console.log('v2 is truthy');
 
 const config1 = v1 || 'default-value';
 const config2 = v2 || 'default-value';
-console.log('config1 =', config1);
-console.log('config2 =', config2);
+console.log(`config1 = ${config1} congfig2 = ${config2}`);
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable only if the variable is `undefined`.
@@ -39,9 +38,7 @@ console.log('config2 =', config2);
 const cfg1 = v1 ?? 'default-value';
 const cfg2 = v2 ?? 'default-value';
 const cfg3 = v3 ?? 'default-value';
-console.log('config1 =', cfg1);
-console.log('config2 =', cfg2);
-console.log('config3 =', cfg3);
+console.log(`config1 = ${cfg1} config2 = '${cfg2}' config3 = ${cfg3}`);
 
 /* TODO:
  * Use the shorthand if/else, which is especially useful for variable assignments.
@@ -54,8 +51,7 @@ console.log('config3 =', cfg3);
 
 const tern1 = v1 ? 'truthy' : 'falsy';
 const tern2 = v2 ? 'truthy' : 'falsy';
-console.log('tern1 =', tern1);
-console.log('tern2 =', tern2);
+console.log(`tern1 = ${tern1} tern2 = ${tern2}`);
 
 /* TODO:
  * Use the shorthand for "if defined".
@@ -70,9 +66,8 @@ console.log('tern2 =', tern2);
 const oc1 = v1?.value;
 const oc2 = v2?.value;
 const oc3 = v3?.value;
-console.log('oc1 =', oc1);
-console.log('oc2 =', oc2);
-console.log('oc3 =', oc3);
+console.log(`oc1 = ${oc1} oc2 = ${oc2} oc3 = ${oc3}`);
+
 /* TODO:
  * Copy an object and add one property.
  * In one expression, make a copy of the variable v1, add the property
@@ -82,7 +77,7 @@ console.log('oc3 =', oc3);
  */
 
 const sObj = { ...v1, foo: 'bar' };
-console.log('sObj = ', sObj);
+console.log(`sObj = ${sObj}`);
 /* TODO:
  * Copy an array and prepend one element.
  * In one expression, make a copy of the variable v4, add the element
@@ -93,4 +88,4 @@ console.log('sObj = ', sObj);
 
 const sArr = [100, ...v4];
 
-console.log('sArr =', sArr);
+console.log(`sArr = ${sArr}`);

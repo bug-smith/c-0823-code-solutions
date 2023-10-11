@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the `&&` (logical AND) and `||` (logical OR) operators and how can they be used outside of `if` statements?
-  they are operators that return a boolean value. they can be used to return a function
+  they are operators that return a boolean value. $$ looks for the last truthy value and returns, || looks for the first truthy value and returns
 - What is "short-circuit evaluation" and how does it apply to `&&` and `||`?
   it is when the operator stops evaluting the expression due to a false evaluation. it applies to && || by returning the false value
 - What is the `??` (nullish coalescing) operator and how does it differ from `||`?
