@@ -27,13 +27,9 @@ function App() {
         </p>
       </div>
       <div className="flex center">
-        <CustomButton text="I" style={{ color: 'red' }} className="blue" />
-        <CustomButton text="Know" style={{ color: 'blue' }} className="red" />
-        <CustomButton
-          text="React"
-          style={{ color: 'white' }}
-          className="green"
-        />
+        <CustomButton text="I" color="red" className="blue" />
+        <CustomButton text="Know" color="blue" className="red" />
+        <CustomButton text="React" color="white" className="green" />
       </div>
     </>
   );
