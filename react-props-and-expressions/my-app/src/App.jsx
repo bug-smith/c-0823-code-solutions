@@ -26,7 +26,15 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <CustomButton />
+      <div className="flex center">
+        <CustomButton text="I" style={{ color: 'red' }} className="blue" />
+        <CustomButton text="Know" style={{ color: 'blue' }} className="red" />
+        <CustomButton
+          text="React"
+          style={{ color: 'white' }}
+          className="green"
+        />
+      </div>
     </>
   );
 }
