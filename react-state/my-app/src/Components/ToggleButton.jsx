@@ -12,7 +12,6 @@ export default function ToggleButton({ text, color }) {
     <button
       style={{ backgroundColor: isClicked ? color : 'white', color: 'black' }}
       onClick={handleClick}>
-      {' '}
       {text}
     </button>
   );
