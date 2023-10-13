@@ -13,10 +13,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the naming convention for event handlers?
   handleXxx
 - What is an "event handler prop"? Which component declares the prop?
-  it is the prop that passes to, the child component
+  it is the prop that can get assigned to the parent component prop, the child component.
 - What are some custom event handler props a component may wish to define?
-
+  Hover, Click
 - What is the naming convention for custom event handler props?
+  onfollowed by the event action
 
 ## Notes
 
