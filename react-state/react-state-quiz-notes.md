@@ -15,7 +15,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What two actions happen when you call a `state setter` function?
   it calls the function, as well as
 - When does the local `state variable` get updated with the new value?
-  after the
+  after the function is returned
 
 ## Notes
 
