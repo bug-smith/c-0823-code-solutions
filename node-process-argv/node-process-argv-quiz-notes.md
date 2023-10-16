@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you access the `process` object in a Node.js program?
   node, then process
 - What is the data type of `process.argv` in Node.js?
-  Object
+  Array of Strings
 - How do you access the command line arguments in a Node.js program?
   by looping through the argv property of the process object array.
 
