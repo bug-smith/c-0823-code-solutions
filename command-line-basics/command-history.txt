@@ -1,0 +1,500 @@
+   83  git commit -m "completed"
+   84  git push origin javascript-view-swapping
+   85  git add javascript-view-swapping
+   86  git commit -m "completed JS swapping notes, didnt save earlier"
+   87  git push origin javascript-view-swapping
+   88  git add javascript-view-swapping
+   89  git commit -m "completed"
+   90  git push origin javascript-view-swapping
+   91  git switch css-canvas-medical 
+   92  git add css-canvas-medical
+   93  git commit -m "completed"
+   94  git push origin css-canvas-medical
+   95  git switch javascript-view-swapping 
+   96  git switch css-canvas-medical 
+   97  git add css-canvas-medical
+   98  git commit -m "updates"
+   99  git push origin css-canvas-medical 
+  100  git switch javascript-view-swapping 
+  101  git switch event-dom-delegation
+  102  git switch dom-event-delegation 
+  103  git switch main
+  104  git branch css-transitions
+  105  git switch css-transitions 
+  106  git add css-transitions
+  107  git commit -m "completed"
+  108  git push origin css-transitions
+  109  git switch main
+  110  git branch css-responsive-layout
+  111  git switch css-responsive-layout 
+  112  git add css-responsive-layout
+  113  git commit -m "completed"
+  114  git push origin css-responsive-layout 
+  115  git switch javascript-typing-tutor 
+  116  git switch main
+  117  git add javascipt-typing-tutor
+  118  git add javascript-typing-tutor
+  119  git commit -m "revisions"
+  120  git push origin javascript-typing-tutor
+  121  git switch main
+  122  git switch css-responsive-layout
+  123  git switch main
+  124  git branch javascript-and-json
+  125  git switch javascript-and-json
+  126  git add javascript-and-json
+  127  git commit -m "completed"
+  128  git push origin javascript-and-json
+  129  git add javascript-and-json
+  130  git commit -m "completeD"
+  131  git push origin javascript-and-json
+  132  git switch css-canvas-medical 
+  133  git switch javascript-and-json
+  134  git switch main
+  135  git branch javascript-local-storage
+  136  git switch javascript-local-storage 
+  137  git add javascript-local-storage
+  138  git commit 0
+  139  git commit -m "completed"
+  140  git push origin javascript-local-storage
+  141  git add javascript-local-storage
+  142  git commit -m "completed"
+  143  git push origin javascript-local-storage
+  144  git add javascript-local-storage
+  145  git commit -m "completed"
+  146  git push origin javascript-local-storage 
+  147  git switch main
+  148  git switch css-canvas-medical 
+  149  git add css-canvas-medical
+  150  git commit -m "revisions"
+  151  git push origin css-canvas-medical
+  152  git add css-canvas-medical
+  153  git commit -m "revisions padding"
+  154  git push origin css-canvas-medical
+  155  git add canvas-medical
+  156  git add css-canvas-medical
+  157  git commit -m "completed"
+  158  git push origin css-canvas-medical
+  159  git switch main
+  160  git branch css-four-column-layout
+  161  git switch css-four-column-layout 
+  162  git switch main
+  163  git switch css-four-column-layout 
+  164  git add css-four-column-layout
+  165  git commit -m "take 1 save"
+  166  git push origin css-four-column-layout 
+  167  git switch main
+  168  git switch dom-creation
+  169  git switch javascript-local-storage 
+  170  git switch javascript-view-swapping
+  171  git switch dom-creation
+  172  git switch javascript-and-json 
+  173  git switch javascript-view-swapping 
+  174  git switch javascript-local-storage
+  175  git switch dom-creation
+  176  git switch javascript-local-storage 
+  177  git switch dom-creation
+  178  git switch javascript-modal 
+  179  git switch main
+  180  git branch four-column-layout
+  181  git switch four-column-layout 
+  182  git add four-column-layout
+  183  git add four-column-layout
+  184  git switch main
+  185  git branch css-four-column-layout
+  186  git switch css-four-column-layout
+  187  git add css-four-column-layout
+  188  git commit -m "Completed 4 column"
+  189  git push origin css-four-column-layout 
+  190  git switch main
+  191  git branch
+  192  git switch javascript-typing-tutor 
+  193  git add javascript-typing-tutor
+  194  git commit -m "draft typing tutor"
+  195  git push origin javascript-typing-tutor 
+  196  git switch main
+  197  git switch javascript-typing-tutor 
+  198  git add javascript-typing-tutor
+  199  git commit -m "revision #2"
+  200  git push origin javascript-typing-tutor 
+  201  git switch main
+  202  git add --all
+  203  git switch main
+  204  git commit -m "completed revisions post"
+  205  git push origin javascript-ajax
+  206  git switch main
+  207  git pull origin main
+  208  git branch es6-destructuring
+  209  git switch es6-destructuring 
+  210  git add --all
+  211  git commit -m "completed"
+  212  git push origin esr-destructuring
+  213  git push origin es6-destructuring
+  214  git add --all
+  215  git commit -m "completed notes"
+  216  git add --all
+  217  git commit -m "completed quiz"
+  218  git push origin es6-destructuring 
+  219  git add --all
+  220  git commit -m "completed"
+  221  git push origin es6-destructuring 
+  222  git switch main
+  223  git pull origin main
+  224  git branch es6-arrow-functions
+  225  git switch es6-arrow-functions 
+  226  git add --all
+  227  git commit -m "completed arrowS"
+  228  git push origin es6-arrow-functions 
+  229  git add --all
+  230  git commit -m "completed second arrow function update"
+  231  git push origin es6-arrow-functions 
+  232  git switch javascript-typing-tutor 
+  233  git switch main
+  234  git add --all
+  235  git commit -m "completed"
+  236  git push origin javascript-typing-tutor
+  237  git swtich main
+  238  git switch main
+  239  git switch es6-arrow-functions
+  240  git add -all
+  241  git add --all
+  242  git commit -m "completed notes
+  243  "
+  244  git push origin es6-arrow-functions 
+  245  git switch main
+  246  git branch objects-revisited
+  247  git switch objects-revisited 
+  248  git add --all
+  249  git commit -m "completed 1st take"
+  250  git push origin objects-revisited
+  251  git switch main
+  252  git branch array-methods
+  253  git switch array-methods 
+  254  git add --all
+  255  git commit -m "completed"
+  256  git push origin array-methods
+  257  git add --all
+  258  git commit -m "completed"
+  259  git push origin array-methods
+  260  git switch main
+  261  git branch es6-operators
+  262  git switch es6-operators
+  263  git add --all
+  264  git commit -m "completed es6-operators"
+  265  git push origin es6-operators
+  266  git add --all
+  267  git commit -m "updated console logs"
+  268  git push origin es6-operators
+  269  git switch main
+  270  git branch npm-intro
+  271  git switch npm-intro
+  272  cd npm-intro
+  273  cp .npm-init.js ~/.npm-init.js
+  274  npm init --yes
+  275  npm install jquery
+  276  npm uninstall package-lock.json
+  277  npm install jquery
+  278  ls
+  279  npm install eslint --save-dev
+  280  npm run hello
+  281  cd ..
+  282  git add -all
+  283  git add --all
+  284  git commit -m "completed npm-intro"
+  285  git push origin npm-intro
+  286  git switch main
+  287  git branch big-o-notation
+  288  git switch big-o-notation
+  289  git add --all
+  290  git commit -m "completed big O"
+  291  git push origin big-o-notation
+  292  git add --all
+  293  git add --all
+  294  git commit -m "completed"
+  295  git push origin big-o-notation 
+  296  git add --all
+  297  git commit -m "completed"
+  298  git push origin big-o-notation
+  299  git add --all
+  300  git commit -m "completed"
+  301  git push origin big-o-notation
+  302  git switch npm-intro
+  303  git add --all
+  304  git commit -m "completed quiz"
+  305  git add --all
+  306  git commit -m "completed"
+  307  git push origin npm-intro
+  308  git switch main
+  309  git branch webpack-and-babel
+  310  git switch webpack-and-babel 
+  311  cd webpack-and-babel
+  312  cd ..
+  313  git add --all
+  314  git commit -m "completed"
+  315  git push origin webpack-and-babel
+  316  git add --all
+  317  git commit -m "completed"
+  318  git push origin webpack-and-babel 
+  319  git add --all
+  320  git commit -m "completed index.js"
+  321  git push origin webpack-and-babel 
+  322  git add --all
+  323  git commit -m "completed revisions"
+  324  git push origin webpack-and-babel 
+  325  git switch main
+  326  git branch react-intro
+  327  git switch react-intro
+  328  cd react-intro
+  329  git add --all
+  330  git commit -m "push 1"
+  331  git puhs origin react-intro
+  332  git push origin react-intro
+  333  cd react-intro
+  334  npm create vite@latest my-app -- --template react
+  335  cd my-app
+  336  npm install
+  337  npm run dev
+  338  npm run dec
+  339  npm run dev
+  340  cd ..
+  341  cd ..
+  342  git add --all
+  343  git commit -m "completed"
+  344  git push origin react-intro
+  345  git switch main
+  346  git switch big-o-notation 
+  347  git add --all
+  348  git commit -m "revised final push"
+  349  git push origin big-o-notation 
+  350  git switch main
+  351  git switch react-intro
+  352  cd my-app
+  353  cd react-intro
+  354  cd my-app
+  355  cd ..
+  356  cd ..
+  357  git add --all
+  358  git commit -m "revised react app to DOM note"
+  359  git push origin react-intro
+  360  git add --all
+  361  git commit -m "added the prop types to be off in eslint"
+  362  git push origin react-intro
+  363  git switch main
+  364  git pull origin main
+  365  git branch react-jsx
+  366  git switch react-jsx 
+  367  cd react-jsx
+  368  npm create vite@latest react-jsx -- --template react
+  369  cd react-jsx
+  370  npm install
+  371  npm run dev
+  372  cd ..
+  373  cd ..
+  374  cd react-jsx
+  375  cd ..
+  376  git add --all
+  377  git commit -m "completed react-jsx"
+  378  git push origin react-jsx
+  379  cd react-jsx
+  380  cd react-jsx
+  381  npm dev run
+  382  npm run dev
+  383  git switch main
+  384  git switch react-jsx
+  385  cd react-jsx
+  386  cd react-jsx
+  387  npm run dev
+  388  cd ..
+  389  cd ..
+  390  git switch main
+  391  git branch react-components
+  392  git switch react-components 
+  393  cd react-components
+  394  npm create vite@latest mp-app -- --teamplate react
+  395  cd mp-app
+  396  npm install
+  397  npm run dev
+  398  cd ..
+  399  cd ..
+  400  git add --all
+  401  git commit -m "completed"
+  402  git push origin react-components 
+  403  cd react-components/mp-app
+  404  npm run dev
+  405  cd ..
+  406  cd ..
+  407  git switch main
+  408  git pull origin main
+  409  git branch react-props-and-expressions
+  410  git switch react-props-and-expressions 
+  411  cd react-props-and-expressions
+  412  cd react-props-and-expressions
+  413  npm create vite@latest my-app --template react
+  414  cd my-app
+  415  npm install
+  416  npm run dev
+  417  cd..
+  418  cd ..
+  419  cd ..
+  420  git add --all
+  421  git commit -m "completed props & expressions"
+  422  git push origin react-props-and-expressions 
+  423  cd react-props-and-expressions/my-app
+  424  npm run dev
+  425  cd ..
+  426  cd ..
+  427  git add --all
+  428  cd react-props-and-expressions/my-app
+  429  npm run dev
+  430  cd ..
+  431  cd ..
+  432  git add --all
+  433  git commit -m "completed revisions and inline styling"
+  434  git push origin
+  435  git push origin react-props-and-expressions 
+  436  git switch main
+  437  git switch react-props-and-expressions 
+  438  cd react-props-and-expressions/my-app
+  439  cd ..
+  440  cd ..
+  441  git add --all
+  442  git commit -m "repush"
+  443  git push origin react-props-and-expressions 
+  444  git switch main
+  445  git branch react-events
+  446  git switch react-events
+  447  cd react-events
+  448  npm create vite@latest my-app --teamplate react
+  449  cd my-app
+  450  npm install
+  451  npm run dev
+  452  npm run dev
+  453  cd ..
+  454  cd ..
+  455  git add --all
+  456  git commit -m "completed react-events"
+  457  git push origin react-events
+  458  git add --all
+  459  git add --all
+  460  git commit -m "completed notes"
+  461  git push origin
+  462  git push origin react-events 
+  463  git cd react-events/my-app/
+  464  cd react-events/my-app/
+  465  npm run dev
+  466  cd ..
+  467  cd ..
+  468  git switch main
+  469  git branch react state
+  470  git switch react-state
+  471  git branch react-state
+  472  git switch react-state
+  473  cd react-state
+  474  npm create vite@latest my-app --template-react
+  475  cd my-app/
+  476  npm install
+  477  npm run dev
+  478  cd ..
+  479  cd ..
+  480  git add --all
+  481  git commit -m "completed state"
+  482  git push origin react-state
+  483  cd react-state/my-app
+  484  npm run dev
+  485  cd ..
+  486  cd ..
+  487  git add --all
+  488  git commit -m "completed some notes"
+  489  git push origin react-state
+  490  git add --all
+  491  git commit -m "completed"
+  492  git push origin react-state
+  493  git switch main
+  494  git switch react-events 
+  495  git switch react-state
+  496  git add --all
+  497  git commit -m "completed notes"
+  498  git push origin react-start
+  499  git push origin react-state
+  500  git switch main
+  501  git pull origin main
+  502  git branch command-line-basics
+  503  git switch command-line-basics 
+  504  cd command-line-basics
+  505  man man
+  506  man ls
+  507  man cat
+  508  cat laziness.txt
+  509  cat impatience.txt
+  510  cat hubris.txt
+  511  man cat
+  512  cat laziness.txt impatience.txt hubris.txt
+  513  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  514  cat three-virtures.txt
+  515  cat three-virtues.txt
+  516  man ls
+  517  ls -a
+  518  ls -F
+  519  ls lfz-staff
+  520  ls -F lfz-staff
+  521  ls -a lfz-staff
+  522  ls -aF lfz-staff > lfz-staff/contents.txt
+  523  cat lfz-staff/contents.txt
+  524  man pwd
+  525  pwd
+  526  pwd 
+  527  > i-was-here.txt
+  528  man pwd
+  529  ls
+  530  cat i-was-here-.txt
+  531  cat i-was-here.txt
+  532  man echo
+  533  echo 'hello, world'
+  534  echo 'Hello, World!' > hello.txt
+  535  man echo
+  536  ls
+  537  cat hello.txt
+  538  man touch
+  539  touch tag-youre-it.txt
+  540  touch snoot/boop.txt
+  541  ls snoot/
+  542  man touch
+  543  man mkdir
+  544  man mkdir
+  545  mkdir parent
+  546  ls
+  547  ls parent
+  548  ls -a
+  549  mkdir -p parent/child/grandchild
+  550  touch parent/child/grandchild/.gitkeep
+  551  touch grandchild/.gitkeep
+  552  touch parent/child/grandchild/.gitkeep
+  553  man touch
+  554  ls -a
+  555  ls parent
+  556  ls grandchild
+  557  ls child
+  558  ls parent/child/grandchild
+  559  ls parent
+  560  ls -a parent
+  561  ls -a parent/child/grandchild
+  562  ls parent/child/grandchild
+  563  man mv
+  564  man mv
+  565  man mv
+  566  mv pokiemans pokemon
+  567  ls
+  568  man rm
+  569  rm lol.txt
+  570  ls
+  571  man rm
+  572  rm -r kill-me/
+  573  ls
+  574  man cp
+  575  man cp
+  576  cp and-then.txt no-and-then.txt
+  577  cat and-then.txt no-and-then.txt
+  578  man history
+  579  man hidstory
+  580  man history
+  581  history
+  582  history > command-history.txt
