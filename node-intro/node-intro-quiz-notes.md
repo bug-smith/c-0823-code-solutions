@@ -15,7 +15,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - When was Node.js created?
   may 27, 20009
 - What backend languages have you heard of?
-  postgreSQL
+  GO, JS, PYTHON, C++
 
 ## Notes
 
