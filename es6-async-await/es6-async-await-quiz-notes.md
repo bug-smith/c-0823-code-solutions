@@ -20,11 +20,17 @@ After completing this exercise, you should be able to discuss or answer the foll
   when you have async binded to the function. you do not use it if the right of await is not a promise. nothing
 
 - How do you handle errors with `await`?
+
   through a catch
+
 - What do `try`, `catch` and `throw` do? When do you use them?
+
   throw: throws an exception. try: looks for a successful response, and if anything in the code block throws an exception it looks to. catch: that looks for an unsucessful respose and expects an exception that is then passed into the return error of the code block
+
 - What happens if you forget to use `await` on a Promise? In that case, what happens to the Promise rejection?
+
   the promise is added to the call stack, and called regardless of the exception thrown, and doesnt allow for error handling
+
 - Which style of asynchronous programming do you prefer — callbacks, `Promise.then`, or `async/await`? Why?
   async await, it resembles regular codeblock structure, and is easily readable.
 
