@@ -8,11 +8,17 @@ After completing this exercise, you should be able to discuss or answer the foll
   async creates a binding onto the function, allowing await to be utilized within the function code body
   await: it is used to hold a function promise until the promise is settled
 - How do `async` and `await` differ from `Promise.then` and `Promise.catch`?
+
   await: differs by waiting for the promise to be handled then returning. whereas the then and catch only return an error or success
+
 - When do you use `async`?
+
   at the start of an async function, or at the top level of a module.
+
 - When do you use `await`? When do you _not_ use `await`? (What happens if you `await` a synchronous function?)
-  when you have async binded to the function. it will give an error of unexpected reserved word
+
+  when you have async binded to the function. you do not use it if the right of await is not a promise. nothing
+
 - How do you handle errors with `await`?
   through a catch
 - What do `try`, `catch` and `throw` do? When do you use them?
