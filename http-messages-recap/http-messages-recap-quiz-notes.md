@@ -9,11 +9,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a server?
   a server is the service which initiates requests for the client, based on the clients choice/selection.
 - Which HTTP method does a browser issue to a web server when you visit a URL?
-  POST
+  GET, triggers TCP/IP
 - What is on the first line of an HTTP **request** message?
-  the description of requests to be implemented. IE methods
+  method, request target, the http version
 - What is on the first line of an HTTP **response** message?
-  result of the request sent
+  protocol version, status code, status text
 - What are HTTP headers?
   they are a way for the client to pass additonal information to the server.
   IE:
