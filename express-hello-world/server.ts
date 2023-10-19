@@ -1,5 +1,4 @@
 import express from 'express';
-// import { listenerCount } from 'process'
 
 const app = express();
 
