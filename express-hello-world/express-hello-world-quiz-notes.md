@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is Express middleware?
-
+  it is a request handler that has access to the applications request response cycle.
 - What is Express middleware useful for?
-
+  it is useful for handling httpRequests.
 - How do you mount a middleware with an Express application?
-
+  creating an app object, and mounting the use() to the app object.
 - Which objects does an Express application pass to your middleware to manage the request/response lifecycle of the server?
+  app object
 
 ## Notes
 
