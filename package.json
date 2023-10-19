@@ -6,7 +6,17 @@
   "scripts": {
     "prepare": "husky install"
   },
+  "nodemonConfig": {
+    "execMap": {
+      "ts": "ts-node-esm",
+      "js": "ts-node-esm"
+    }
+  },
   "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard": "^17.0.0",
