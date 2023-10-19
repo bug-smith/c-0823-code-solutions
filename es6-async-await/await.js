@@ -10,7 +10,7 @@ async function readOnce() {
     const response = await read('foo/bar.html');
     console.log(elapsed(), 'readOnce:', response);
   } catch (err) {
-    console.error();
+    console.error(err);
   }
 }
 
@@ -23,7 +23,7 @@ async function readSeveral() {
     const response3 = await read('foo3/bar.html');
     console.log(elapsed(), 'readSeveral3:', response3);
   } catch (error) {
-    console.error();
+    console.error(error);
   }
 }
 
@@ -36,7 +36,7 @@ async function readChained() {
     const response2 = await read(response1);
     console.log(elapsed(), 'readChained3:', response2);
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }
 

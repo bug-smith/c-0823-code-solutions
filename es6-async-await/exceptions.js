@@ -42,7 +42,7 @@ async function throwChained() {
     const response2 = await read(response1);
     console.log(elapsed(), 'throwChained1:', response2);
   } catch (error) {
-    console.log(elapsed(), 'throwChained Error:', error.message);
+    console.error(elapsed(), 'throwChained Error:', error.message);
   }
 }
 
