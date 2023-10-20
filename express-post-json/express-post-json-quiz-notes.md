@@ -5,6 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What does the `express.json()` middleware do and when would you need it?
+  it parses the incoming requests with JSON. you would need to it POST javascript data types.
+
+  IE: number,obj
 
 ## Notes
 
