@@ -30,10 +30,9 @@ const grades: Record<number, Grade> = {
 
 const app = express();
 
-app.get('/api/grades', (req, res, next) => {
+app.get('/api/grades', (req, res) => {
   const localArr: Grade[] = Object.values(grades);
   res.json(localArr);
-  next();
 });
 
 app.delete('/api/grades/:id', (req, res) => {
