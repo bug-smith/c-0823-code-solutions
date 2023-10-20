@@ -34,7 +34,6 @@ app.post('/api/grades', (req, res) => {
   grades[nextId] = grade;
   nextId++;
   res.json(grade);
-  res.send();
 });
 
 app.listen('8080', () => {
