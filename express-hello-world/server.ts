@@ -4,8 +4,8 @@ const app = express();
 
 app.use((req, res, next) => {
   console.log('Request Type:', req.method);
-  next();
   res.send('Hello World');
+  next();
 });
 
 app.listen('8080', () => {
