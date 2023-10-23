@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars -- REMOVE ME */
 import { readFile, writeFile } from 'node:fs/promises';
 import express from 'express';
 
@@ -129,6 +128,6 @@ app.put('/api/notes/:id', async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
+app.listen('8080', () => {
   console.log(`express server listening on port 8080`);
 });
