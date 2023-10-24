@@ -2,4 +2,4 @@ select "title",
 "replacementCost"
 from "films"
 order by "replacementCost" desc
-limit 10
+limit 10;

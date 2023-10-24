@@ -1,2 +1,2 @@
 select *
-from "languages"
+from "languages";
