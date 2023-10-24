@@ -25,7 +25,7 @@ async function writeData(data: Data) {
   await writeFile('./data.json', JSON.stringify(data, null, 2));
 }
 
-app.get('/api/notes', async (req, res) => {
+app.get('/api/notes', async (req, res, next) => {
   try {
     const data = await readData();
     const notes: Note[] = [];
@@ -34,36 +34,31 @@ app.get('/api/notes', async (req, res) => {
     }
     res.json(notes);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.get('/api/notes/:id', async (req, res) => {
+app.get('/api/notes/:id', async (req, res, next) => {
   try {
     const data = await readData();
     const id = Number(req.params.id);
     if (Number.isNaN(id) || !Number.isInteger(id) || id < 1) {
-      res.status(400).json({ error: 'id must be a positive integer' });
-      return;
+      throw new ClientError(400, 'id must be a positive integer');
     }
     if (data.notes[id] === undefined) {
-      res.status(404).json({ error: `cannot find note with id ${id}` });
-      return;
+      throw new ClientError(404, `cannot find note with id ${id}`);
     }
     res.json(data.notes[id]);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.post('/api/notes', async (req, res) => {
+app.post('/api/notes', async (req, res, next) => {
   try {
     const { content } = req.body;
     if (content === undefined) {
-      res.status(400).json({ error: 'content is a required field' });
-      return;
+      throw new ClientError(400, 'content is a required field');
     }
     const data = await readData();
     const note = {
@@ -75,48 +70,41 @@ app.post('/api/notes', async (req, res) => {
     await writeData(data);
     res.status(201).json(note);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.delete('/api/notes/:id', async (req, res) => {
+app.delete('/api/notes/:id', async (req, res, next) => {
   try {
     const id = Number(req.params.id);
     if (Number.isNaN(id) || !Number.isInteger(id) || id < 1) {
-      res.status(400).json({ error: 'id must be a positive integer' });
-      return;
+      throw new ClientError(400, 'id must be a positive integer');
     }
     const data = await readData();
     if (data.notes[id] === undefined) {
-      res.status(404).json({ error: `cannot find note with id ${id}` });
-      return;
+      throw new ClientError(404, `cannot find note with id ${id}`);
     }
     delete data.notes[id];
     await writeData(data);
     res.sendStatus(204);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
-app.put('/api/notes/:id', async (req, res) => {
+app.put('/api/notes/:id', async (req, res, next) => {
   try {
     const id = Number(req.params.id);
     if (Number.isNaN(id) || !Number.isInteger(id) || id < 1) {
-      res.status(400).json({ error: 'id must be a positive integer' });
-      return;
+      throw new ClientError(400, 'id must be a positive integer');
     }
     const { content } = req.body;
     if (content === undefined) {
-      res.status(400).json({ error: 'content is a required field' });
-      return;
+      throw new ClientError(400, 'content is a required field');
     }
     const data = await readData();
     if (data.notes[id] === undefined) {
-      res.status(404).json({ error: `cannot find note with id ${id}` });
-      return;
+      throw new ClientError(404, `cannot find note with id ${id}`);
     }
     const note = {
       id,
@@ -126,8 +114,7 @@ app.put('/api/notes/:id', async (req, res) => {
     await writeData(data);
     res.json(note);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'an unexpected error occurred' });
+    next(err);
   }
 });
 
