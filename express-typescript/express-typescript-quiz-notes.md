@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why is TypeScript popular?
   It is popular because it allows for easier debugging`. IE understanding when a datatype is off
 - What is a convenient way to run an Express server written in TypeScript?
-  ts-node-esm server module
+  ts-node-esm server module dsa
 
 ## Notes
 
