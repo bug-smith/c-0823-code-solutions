@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are some examples of aggregate functions?
   count(\*), sum(), avg()
 - What is the purpose of a `group by` clause?
-  the purpose is to create a group of rows for many data values to be stored within a row.
+  the purpose is to show one value per grouped field. when aggregating
 
 ## Notes
 
