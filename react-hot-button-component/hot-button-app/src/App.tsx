@@ -26,7 +26,7 @@ function App() {
     }
   };
   return (
-    <>
+    <div>
       <button
         onClick={incrementCount}
         style={{ background: color, color: 'grey' }}>
@@ -37,7 +37,7 @@ function App() {
         style={{ background: 'yellow', color: 'black' }}>
         {count}
       </button>
-    </>
+    </div>
   );
 }
 
