@@ -1,4 +1,6 @@
-export default function Selections (){
+import React from 'react';
+
+export default function Selections() {
   return (
     <div>
       <button>1</button>

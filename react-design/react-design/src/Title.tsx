@@ -1,9 +1,9 @@
+import React from 'react'
 
-
-export function Title (){
+export function Title ({item}){
   return (
     <div>
-      <p>Dromedary</p>
+      <p>{item}</p>
     </div>
   )
 }
