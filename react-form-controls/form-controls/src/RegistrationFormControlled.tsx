@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-export default function RegistrationFormcontrolled() {
-  const [username, isUsername] = useState('');
-  const [password, isPassword] = useState('');
+export default function RegistrationFormControlled() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(username, password);
@@ -16,7 +16,7 @@ export default function RegistrationFormcontrolled() {
           type="text"
           name="username"
           value={username}
-          onChange={(e) => isUsername(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}
         />
       </label>
       <label>
@@ -25,7 +25,7 @@ export default function RegistrationFormcontrolled() {
           type="text"
           name="password"
           value={password}
-          onChange={(e) => isPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
         />
       </label>
       <button type="submit">Sign Up</button>
