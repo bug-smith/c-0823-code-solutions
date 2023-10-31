@@ -23,12 +23,13 @@ export default function RotatingBanner({ items }: Props) {
     const selectedIndex = items.indexOf(selectedItem);
     setIndex(selectedIndex);
   };
+  console.log(items[index]);
   return (
     <div>
       <Title item={items[index]} />
-      <PreviousButton onPrev={handlePrevButton} />
+      <PreviousButton onPrev={handlePrevButton} text="Prev" />
       <Selections onSelection={handleSelection} items={items} />
-      <NextButton onNext={handleNextButton} />
+      <NextButton onNext={handleNextButton} text="Next" />
     </div>
   );
 }
