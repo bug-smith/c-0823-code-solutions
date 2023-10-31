@@ -1,19 +1,19 @@
 type Props = {
-  onSelection: (item: string) => void;
+  onSelection: (index: string) => void;
   items: string[];
-  current: number
+  current: number;
 };
 
-export default function Selections({ items, onSelection , current}: Props) {
+export default function Selections({ items, onSelection, current }: Props) {
   return (
     <div>
-      {items.map((item, index) => (
+      {items.map((_item, index) => (
         <button
           key={index}
           style={{
             backgroundColor: current === index ? 'lightblue' : '#1a1a1a',
           }}
-          onClick={() => onSelection(item)}>
+          onClick={() => onSelection(_item)}>
           {index}
         </button>
       ))}
