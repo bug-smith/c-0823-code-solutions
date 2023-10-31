@@ -1,7 +1,7 @@
 import { Title } from './Title';
 import Selections from './Selections';
 import { PreviousButton } from './PreviousButton';
-import { NextButton } from './NextButton';
+import { Button } from './Button';
 import { useState } from 'react';
 
 type Props = {
@@ -27,9 +27,9 @@ export default function RotatingBanner({ items }: Props) {
   return (
     <div>
       <Title item={items[index]} />
-      <PreviousButton onPrev={handlePrevButton} text="Prev" />
-      <Selections onSelection={handleSelection} items={items} />
-      <NextButton onNext={handleNextButton} text="Next" />
+      <Button onClick={handlePrevButton} text="Prev" />
+      <Selections onSelection={handleSelection} items={items} current={index}/>
+      <Button onClick={handleNextButton} text="Next" />
     </div>
   );
 }
