@@ -1,8 +1,8 @@
-import './App.css'
-import React from 'react'
+import './App.css';
 import RotatingBanner from './RotatingBanner';
+export type Items = string[];
 
-const items = [
+const items: Items = [
   'Aardvark',
   'Bengal',
   'Caterpillar',
@@ -12,8 +12,7 @@ const items = [
 ];
 
 function App() {
-
-  return <RotatingBanner />
+  return <RotatingBanner items={items} />;
 }
 
-export default App
+export default App;

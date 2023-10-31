@@ -1,5 +1,6 @@
-import React from 'react';
-
-export function PreviousButton() {
-  return <button>Prev</button>;
+type Props = {
+  onPrev: () => void;
+};
+export function PreviousButton({ onPrev }: Props) {
+  return <button onClick={onPrev}>Prev</button>;
 }

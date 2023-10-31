@@ -1,9 +1,11 @@
-import React from 'react'
+type Props = {
+  item: string;
+};
 
-export function Title ({item}){
+export function Title({ item }: Props) {
   return (
     <div>
       <p>{item}</p>
     </div>
-  )
+  );
 }

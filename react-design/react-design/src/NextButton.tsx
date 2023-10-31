@@ -1,7 +1,6 @@
-import React from 'react'
-
-export function NextButton (){
-  return (
-    <button>Next</button>
-  )
+type Props = {
+  onNext: () => void;
+};
+export function NextButton({ onNext }: Props) {
+  return <button onClick={onNext}>Next</button>;
 }

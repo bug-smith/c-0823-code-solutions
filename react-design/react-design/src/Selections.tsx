@@ -1,13 +1,16 @@
-import React from 'react';
+type Props = {
+  onSelection: (item: string) => void;
+  items: string[];
+};
 
-export default function Selections() {
+export default function Selections({ items, onSelection }: Props) {
   return (
     <div>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      {items.map((item, index) => (
+        <button key={index} onClick={() => onSelection(item)}>
+          {items.indexOf(item)}
+        </button>
+      ))}
     </div>
   );
 }
