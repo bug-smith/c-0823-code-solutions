@@ -18,16 +18,15 @@ export function List() {
         const fetchItems = await readItems();
         setItems(fetchItems);
       } catch (e) {
-        console.error(e);
         setError(e);
       } finally {
         setIsLoading(false);
       }
     };
-    if (!isLoading) fetchData();
-  }, [isLoading]);
+    fetchData();
+  }, []);
 
-  if (isLoading === undefined || isLoading) {
+  if (isLoading) {
     return <div>Loading...</div>;
   }
 
