@@ -24,7 +24,7 @@ export function List() {
       }
     };
     fetchData();
-  }, [isLoading]);
+  }, [items]);
 
   if (isLoading) {
     return <div>Loading...</div>;
