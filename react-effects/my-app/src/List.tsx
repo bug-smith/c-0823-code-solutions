@@ -14,8 +14,8 @@ export function List() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const items = await readItems();
-        setItems(items);
+        const fetchItems = await readItems();
+        setItems(fetchItems);
         setIsLoading(false);
       } catch (e) {
         console.error(e);
