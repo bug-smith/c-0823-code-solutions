@@ -24,8 +24,8 @@ export function List() {
         setIsLoading(false);
       }
     };
-    fetchData();
-  }, []);
+    if (!isLoading) fetchData();
+  }, [isLoading]);
 
   if (isLoading === undefined || isLoading) {
     return <div>Loading...</div>;
