@@ -5,14 +5,15 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - How can `useEffect` be used to load data for a component?
-
+  it can be used by
 - What browser function can be used to make HTTP requests to a server in React?
-
+  Fetch()
 - How do you use `useEffect` to load component data just once when the component mounts?
-
+  dependency of empty array literal
 - How do you use `useEffect` to load component data every time the data key changes?
-
+  add a dependency array of data that you want the change to occur on
 - In a large-scale production app, what are some better alternatives for loading and managing backend data?
+  3rd party packages like, react Query, or vercel SWR
 
 ## Notes
 
