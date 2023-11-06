@@ -51,11 +51,31 @@ export function Todos() {
       setTodos((prev) => prev.concat(responseData));
     } catch (e) {
       setError(e);
+    } finally {
+      setIsLoading(false);
     }
   }
 
   /* Implement toggleCompleted to toggle the completed state of a todo. Hints are at the bottom of the file. */
-  async function toggleCompleted(todoId: number) {}
+  async function toggleCompleted(todoId: number) {
+    const todo = todos.find((i) => i.todoId === todoId);
+    if (!todo) throw new Error(`the todo you are looking for does not exist`);
+    const updatedStatus = { isCompleted: !todo?.isCompleted };
+    try {
+      const response = await fetch(`/api/todos/${todoId}`, {
+        method: 'PATCH',
+        body: JSON.stringify(updatedStatus),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      if (!response.ok) throw new Error(`Fetch has failed ${response.status}`);
+      const updatedTodo = await response.json();
+      setTodos(todos.map((i) => (i.todoId === todoId ? updatedTodo : i)));
+    } catch (e) {
+      setError(e);
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
   if (isLoading) {
     return <div>Loading...</div>;
