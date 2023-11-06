@@ -13,6 +13,26 @@ export function UserDetails({ userId, onCancel }: Props) {
   const [user, setUser] = useState<User>();
 
   /* your code here (hint: useEffect) */
+  useEffect(() => {
+    async function getData() {
+      setIsLoading(true);
+      try {
+        const response = await fetch(
+          `https://jsonplaceholder.typicode.com/users/${userId}`
+        );
+        if (!response.ok) {
+          throw new Error(`fetch failed ${response.status}`);
+        }
+        const userData = await response.json();
+        setUser(userData);
+      } catch (e) {
+        setError(e);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    getData();
+  }, [userId]);
 
   if (isLoading) {
     return <p>Loading...</p>;
