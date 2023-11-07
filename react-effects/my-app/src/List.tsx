@@ -13,18 +13,25 @@ export function List() {
   //    - Handle errors from `readItems`
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true)
+
       try {
         const items = await readItems();
         setItems(items);
-        setIsLoading(false);
       } catch (e) {
         console.error(e);
         setError(e);
-        setIsLoading(false);
+      try {
+        const fetchItems = await readItems();
+        setItems(fetchItems);
+      } catch (e) {
+        setError(e);
+      } finally {
+        setIsLoading(false)
       }
     };
     fetchData();
-  }, [items]);
+  }, []);
 
   if (isLoading) {
     return <div>Loading...</div>;
