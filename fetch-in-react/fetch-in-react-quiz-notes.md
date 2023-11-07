@@ -5,7 +5,6 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - How can `useEffect` be used to load data for a component?
-  it can be used by
 - What browser function can be used to make HTTP requests to a server in React?
   Fetch()
 - How do you use `useEffect` to load component data just once when the component mounts?
@@ -15,9 +14,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 - In a large-scale production app, what are some better alternatives for loading and managing backend data?
   3rd party packages like, react Query, or vercel SWR
 
+
 ## Notes
 
 All student notes should be written here.
+
 
 How to write `Code Examples` in markdown
 
@@ -29,6 +30,7 @@ const data = 'Howdy';
 
 for HTML:
 
+
 ```html
 <div>
   <p>This is text content</p>
@@ -39,6 +41,12 @@ for CSS:
 
 ```css
 div {
+  width:100%
+
+
+```css
+div {
   width: 100%;
+
 }
 ```
