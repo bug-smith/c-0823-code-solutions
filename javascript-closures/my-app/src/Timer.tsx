@@ -12,10 +12,12 @@ export function Timer() {
 
   return (
     <div>
-      {time}
-      <button onClick={() => setTime(0)} style={{ marginLeft: '1rem' }}>
-        Reset
-      </button>
+      <div>
+        {time}
+        <button onClick={() => setTime(0)} style={{ marginLeft: '1rem' }}>
+          Reset
+        </button>
+      </div>
     </div>
   );
 }
