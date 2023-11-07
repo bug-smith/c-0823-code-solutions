@@ -64,12 +64,29 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     }
 
     /* your code starts here */
-    const sql = `select userId, hashedPassword
+    const sql = `select "userId", "hashedPassword"
                   from "users"
-                  where username = $1`;
+                  where username = $1
+                  `;
     const params = [username];
-    const { rows } = await db.query(sql, params);
-    console.log(rows);
+    const result = await db.query(sql, params);
+    const user = result.rows[0];
+    if (user.length === 0) {
+      throw new ClientError(401, `invalid login the user does not exist`);
+    }
+    const verifiedPassword = await argon2.verify(user.hashedPassword, password);
+    if (!verifiedPassword) {
+      throw new ClientError(
+        401,
+        `invalid login the password has failed verification`
+      );
+    }
+    const payload = {
+      userId: user.userId,
+      username,
+    };
+    const token = jwt.sign(payload, hashKey, { expiresIn: '1hr' });
+    res.status(201).json({ payload, token });
     /* Query the database to find the "userId" and "hashedPassword" for the "username".
      * If no user is found,
      *   throw a 401: 'invalid login' error.
