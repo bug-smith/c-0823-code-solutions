@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the purpose of React "context"?
   to get rid of prop drilling, IE teleport data to a component, instead of passing.
 - What values can be stored in context?
-
+  any value, even functions.
 - How do you create context and make it available to the components?
   create a LevelContext.js/ts module, import from react createContext, then export the variable assigned using the createContext method.
   once in the component import useContext from react

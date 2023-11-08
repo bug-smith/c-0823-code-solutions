@@ -12,8 +12,8 @@ type Props = {
 export function AuthPage({ action }: Props) {
   const navigate = useNavigate();
   /* TODO: Grab `user` and `handleSignIn` from `AppContext` */
-  const user = undefined;
-  const handleSignIn = () => {};
+  const user = useContext(AppContext).user;
+  const handleSignIn = useContext(AppContext).handleSignIn;
 
   useEffect(() => {
     if (user) navigate('/');
