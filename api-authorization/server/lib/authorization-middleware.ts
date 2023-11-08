@@ -1,11 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars -- Remove me */
 import { NextFunction, Request, Response } from 'express';
-import jwt, { JwtPayload } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { ClientError } from './client-error.js';
-
-interface PayLoad extends JwtPayload {
-  userId: number;
-}
 
 export function authMiddleware(
   req: Request,
@@ -19,14 +15,9 @@ export function authMiddleware(
   if (!auth || !token) {
     throw new ClientError(401, 'Auth required');
   }
-  jwt.verify(token, secretToken, (err, decoded) => {
-    if (err) {
-      throw new ClientError(401, 'Auth required');
-    }
-    const payload = decoded as PayLoad;
-    req.user = payload;
-    next();
-  });
+  const decoded = jwt.verify(token, secretToken);
+  req.user = decoded as Request['user'];
+  next();
   /* your code here */
 }
 
