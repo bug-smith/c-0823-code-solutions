@@ -18,6 +18,8 @@ export function UploadForm() {
         method: 'POST',
         body: form,
       });
+      if (!fetchResponse.ok)
+        throw new Error(`fetch error: ${fetchResponse.status}`);
       const parsedData = await fetchResponse.json();
       console.log(parsedData);
       setImage(parsedData);
