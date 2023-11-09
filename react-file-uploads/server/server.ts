@@ -35,8 +35,8 @@ app.post(
       if (!caption) {
         throw new ClientError(400, 'caption is a required field');
       }
-      const url = `/files/${req.file.filename}`;
-      const sql = `insert into "images" (caption, url) values ($1, $2) returning *`;
+      const url = `/images/${req.file.filename}`;
+      const sql = `insert into "images" ("caption", "url") values ($1, $2) returning *`;
       const params = [caption, url];
       const result = await db.query(sql, params);
       res.status(200).json(result.rows[0]);
