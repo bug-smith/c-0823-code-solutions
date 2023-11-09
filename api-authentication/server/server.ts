@@ -84,14 +84,7 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     };
 
     const token = jwt.sign(payload, hashKey);
-    const userOBJ = {
-      user: {
-        userId: payload.userId,
-        username: payload.username,
-      },
-      token,
-    };
-    res.status(201).json(userOBJ);
+    res.status(201).json({ user: payload, token });
     /* Query the database to find the "userId" and "hashedPassword" for the "username".
      * If no user is found,
      *   throw a 401: 'invalid login' error.
