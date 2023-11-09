@@ -5,11 +5,9 @@ import { FaBolt, FaSignOutAlt } from 'react-icons/fa';
 import { AppContext } from './AppContext';
 
 export function NavBar() {
-  useContext(AppContext);
+  const { user, handleSignOut } = useContext(AppContext);
 
   /* TODO: Grab `user` and `handleSignOut` from `AppContext` */
-  const user = useContext(AppContext).user;
-  const handleSignOut = useContext(AppContext).handleSignOut;
 
   return (
     <div>
