@@ -74,6 +74,7 @@ export function UploadForm() {
               </button>
             </div>
           </form>
+          {image && <img src={image.url} />}
         </div>
       </div>
     </div>
